@@ -1,0 +1,8 @@
+CREATE TABLE twitter (
+    id long,
+    name varchar(50),
+    screenName varchar(50),
+    freindsCount long,
+    text varchar(5000),
+	createdAt varchar(50)
+);
