@@ -89,7 +89,7 @@ public class TwitterStreaming {
 
 				try {
 
-					String query = " insert into twitter (id, name, screenName, freindsCount, text, createdAt)"
+					String query = " insert into twitter_record_1 (id, name, screenName, friendsCount, text, createdAt)"
 							+ " values (?, ?, ?, ?, ?, ?)";
 					// create the mysql insert preparedstatement
 					Connection conn;
@@ -100,7 +100,7 @@ public class TwitterStreaming {
 					preparedStmt.setLong(1, id);
 					preparedStmt.setString(2, name);
 					preparedStmt.setString(3, screenName);
-					preparedStmt.setLong(4, freindsCount);
+					preparedStmt.setLong(4, friendsCount);
 					preparedStmt.setString(5, text);
 					preparedStmt.setString(6, createdAt);
 					preparedStmt.execute();
