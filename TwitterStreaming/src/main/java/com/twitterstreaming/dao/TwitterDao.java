@@ -25,7 +25,7 @@ public class TwitterDao {
 
 		try {
 			connection = DriverManager.getConnection(
-					"jdbc:mysql://localhost/twitter_Db", "root", "searose20");
+					"jdbc:mysql://localhost/twitter_Db", "root", "unknown");
 
 		} catch (SQLException e) {
 			System.out.println("Connection Failed! Check output console");

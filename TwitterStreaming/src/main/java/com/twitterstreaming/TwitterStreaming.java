@@ -18,12 +18,12 @@ import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.TimeUnit;
 
 public class TwitterStreaming {
-	private static String consumerKey = "gmtL24mhQEgs3nLRWaxrFJGwM";
-	private static String consumerSecret = "nWBbSHsUKMWoqx95a0YUNmfNxLseKRRMp6WmsFBqyQYnMfvE66";
-	private static String token = "956751386460413954-TSLO6fPMm5G62Mz8CK4hYrLusXTuOOP";
-	private static String secret = "I1P6o98jobpNjWiaLO9OS0lijcH4svFUmNXYxtdV0NfWj";
+	private static String consumerKey = "46Dz3NbUZ4EnZnzmUjclSL7Ci";
+	private static String consumerSecret = "OpigqjT2hUruK9YDVfJah2UzYgbsi7kZfs88NUpNJJ9rbrY0ZZ";
+	private static String token = "805219579698040832-L6Jl2qpxsiooHrGmBxq3NAgVNHeXyr1";
+	private static String secret = "fzZNZsv8jgYsEdHqTmTGtnEf8TU8XPMGhN9KRlemgxKjH";
 	private TwitterDao twitterDao;
-	private static long freindsCount;
+	private static long friendsCount;
 	private static String name;
 	private static String screenName;
 
@@ -79,11 +79,11 @@ public class TwitterStreaming {
 				if (tw.getUser() != null) {
 
 					System.out.println("tw " + tw.getUser().getFriendsCount());
-					long freindsCount = tw.getUser().getFriendsCount();
+					friendsCount = tw.getUser().getFriendsCount();
 					System.out.println("tw " + tw.getUser().getName());
-					String name = tw.getUser().getName();
+				    name = tw.getUser().getName();
 					System.out.println("tw " + tw.getUser().getScreenName());
-					String screenName = tw.getUser().getScreenName();
+					screenName = tw.getUser().getScreenName();
 
 				}
 
