@@ -18,10 +18,10 @@ import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.TimeUnit;
 
 public class TwitterStreaming {
-	private static String consumerKey = "46Dz3NbUZ4EnZnzmUjclSL7Ci";
-	private static String consumerSecret = "OpigqjT2hUruK9YDVfJah2UzYgbsi7kZfs88NUpNJJ9rbrY0ZZ";
-	private static String token = "805219579698040832-L6Jl2qpxsiooHrGmBxq3NAgVNHeXyr1";
-	private static String secret = "fzZNZsv8jgYsEdHqTmTGtnEf8TU8XPMGhN9KRlemgxKjH";
+	private static String consumerKey = "------------";
+	private static String consumerSecret = "---------------------";
+	private static String token = "-------------------------------------";
+	private static String secret = "--------------------------------------";
 	private TwitterDao twitterDao;
 	private static long friendsCount;
 	private static String name;
